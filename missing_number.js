@@ -5,7 +5,9 @@ function getMissingNo(a, n)
     for (i = 2; i<= (n+1); i++)
     {
         total += i;
+        console.log("before total==>",total);
         total -= a[i-2];
+        console.log("after total===>",total);
     }
     return total; 
 } 
@@ -16,3 +18,10 @@ function getMissingNo(a, n)
     
     // Function call
     console.log(getMissingNo(arr, N));
+
+
+    // 3 -3
+    // 0 -5
+    // -1 -4
+    // 1 -3
+    // 3 1
